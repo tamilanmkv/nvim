@@ -1,5 +1,4 @@
 vim.cmd [[packadd packer.nvim]]
-
 return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
@@ -50,4 +49,9 @@ return require('packer').startup(function(use)
 		run = ":MasonUpdate" -- :MasonUpdate updates registry contents
 	}
 	use('tpope/vim-commentary')
+
+	use('neovim/nvim-lspconfig')
+	use('jose-elias-alvarez/null-ls.nvim')
+	use('MunifTanjim/prettier.nvim')
+
 end)
