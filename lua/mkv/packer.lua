@@ -14,10 +14,6 @@ return require('packer').startup(function(use)
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate'
 	}	
-	use {
-		'nvim-treesitter/nvim-treesitter',
-		run = ':TSUpdate'
-	}
 	use('nvim-treesitter/playground')
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
@@ -53,5 +49,5 @@ return require('packer').startup(function(use)
 	use('neovim/nvim-lspconfig')
 	use('jose-elias-alvarez/null-ls.nvim')
 	use('MunifTanjim/prettier.nvim')
-
+ use("eandrju/cellular-automaton.nvim")
 end)
