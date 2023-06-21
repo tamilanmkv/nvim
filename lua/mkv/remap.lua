@@ -12,7 +12,7 @@ vim.keymap.set('n',"<leader>/", ":Commentary<cr>")
 vim.keymap.set('v',"<leader>/", ":Commentary<cr>")
 
 -- greatest remap ever
-vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set("x", "<leader>pp", [["_dP]])
 
 -- next greatest remap ever : asbjornHaland
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
@@ -40,3 +40,10 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- move selected lines
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+
+vim.keymap.set({'n','v'}, '<C-f>', "\"fy/\\<C-R>f<CR>")
+
+vim.keymap.set('n','<C-f>', ":noh<CR>")
+-- vim.keymap.set('n','<C-f>', '/<C-r><C-w>\>/<C-r><C-w>')
+
