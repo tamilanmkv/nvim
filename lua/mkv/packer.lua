@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 
 	}
-	use { 'rose-pine/neovim', as = 'rose-pine' }
+    use({ 'rose-pine/neovim', as = 'rose-pine' })
 	use {
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate'
