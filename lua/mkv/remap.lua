@@ -8,6 +8,10 @@ vim.keymap.set('n', '<leader>rp', ":w<CR>:!python3 %<CR>")
 vim.keymap.set('n', '<leader>rn', ":w<CR>:!node %<CR>")
 
 
+--rust execute with <leader>rr
+vim.keymap.set('n','<leader>rr', ":w<CR>:!rustc %<CR>:!./%:r<CR>")
+
+
 vim.keymap.set('n',"<leader>/", ":Commentary<cr>")
 vim.keymap.set('v',"<leader>/", ":Commentary<cr>")
 
