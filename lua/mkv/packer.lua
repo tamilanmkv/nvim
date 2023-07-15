@@ -50,6 +50,11 @@ return require('packer').startup(function(use)
 	use('jose-elias-alvarez/null-ls.nvim')
 	use('MunifTanjim/prettier.nvim')
     use('simrat39/rust-tools.nvim')
- use("eandrju/cellular-automaton.nvim")
- use("barrett-ruth/live-server.nvim")
+     use("eandrju/cellular-automaton.nvim")
+     use("barrett-ruth/live-server.nvim")
+     -- tmux integration
+     use({
+        "aserowy/tmux.nvim",
+        config = function() return require("tmux").setup() end
+})
 end)

@@ -9,7 +9,7 @@ vim.keymap.set('n', '<leader>rn', ":w<CR>:!node %<CR>")
 
 
 --rust execute with <leader>rr
-vim.keymap.set('n','<leader>rr', ":w<CR>:!rustc %<CR>:!./%:r<CR>")
+vim.keymap.set('n','<leader>rr', ":w<CR>:!cargo run<CR>")
 
 
 vim.keymap.set('n',"<leader>/", ":Commentary<cr>")
@@ -37,7 +37,6 @@ vim.keymap.set('v',"<leader>[", ":<<CR>")
 vim.keymap.set('n',"<leader>wq", ":wq<CR>")
 vim.keymap.set('n',"<leader>q", ":q<CR>")
 
-
 -- replace selcted current word
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
@@ -49,5 +48,12 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set({'n','v'}, '<C-f>', "\"fy/\\<C-R>f<CR>")
 
 vim.keymap.set('n','<C-f>', ":noh<CR>")
+
 -- vim.keymap.set('n','<C-f>', '/<C-r><C-w>\>/<C-r><C-w>')
+
+
+
+
+--selected word stdout to bard-cli search
+vim.keymap.set('v','<leader>g', [["*y:%!bard-cli search <C-R>*<CR>]])
 

@@ -1,5 +1,4 @@
 vim.opt.guicursor = ""
-
 vim.opt.nu = true
 vim.opt.relativenumber = false
 
@@ -27,5 +26,5 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 5
-
+vim.opt.ic = true
 
