@@ -53,8 +53,15 @@ return require('packer').startup(function(use)
      use("eandrju/cellular-automaton.nvim")
      use("barrett-ruth/live-server.nvim")
      -- tmux integration
-     use({
-        "aserowy/tmux.nvim",
-        config = function() return require("tmux").setup() end
-})
+     -- use({
+     --    "aserowy/tmux.nvim",
+     --    config = function() return require("tmux").setup() end
+-- })
+    --- file manager ---
+use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons', -- optional
+  },
+}
 end)
