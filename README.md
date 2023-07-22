@@ -8,4 +8,10 @@
   2. `<leader>ff` Telescope find files
   3. `<leader>fg` File grep 
   4. `<leader>fs` Find String
-  
+  5. `<leader>pv` move pointer to file manger
+  6. `<C-p>`      when normal mode C-p to open switch git files
+
+
+## Fun 
+ 1. `<leader>c` Code rain fall
+
