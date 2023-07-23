@@ -49,11 +49,8 @@ vim.g.nvim_tree_show_icons = {
 }
 
 require'nvim-tree'.setup {
-  open_on_setup = true,
   auto_close = true,
-  opens_on_tab = false,
   update_focused_file = {
     enable = true
   },
-  lsp_diagnostics = true
 }
