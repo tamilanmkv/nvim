@@ -64,4 +64,10 @@ use {
     'nvim-tree/nvim-web-devicons', -- optional
   },
 }
+use('mhartington/formatter.nvim')
+use({ "wesleimp/stylua.nvim" })
+
+-- auto close tags
+use('m4xshen/autoclose.nvim')
+require("autoclose").setup()
 end)
