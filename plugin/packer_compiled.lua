@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/mkv/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["autoclose.nvim"] = {
+    loaded = true,
+    path = "/Users/mkv/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
+    url = "https://github.com/m4xshen/autoclose.nvim"
+  },
   ["cellular-automaton.nvim"] = {
     loaded = true,
     path = "/Users/mkv/.local/share/nvim/site/pack/packer/start/cellular-automaton.nvim",
@@ -108,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/mkv/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/Users/mkv/.local/share/nvim/site/pack/packer/start/formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
@@ -198,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/mkv/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
+  },
+  ["stylua.nvim"] = {
+    loaded = true,
+    path = "/Users/mkv/.local/share/nvim/site/pack/packer/start/stylua.nvim",
+    url = "https://github.com/wesleimp/stylua.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
