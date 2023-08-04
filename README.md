@@ -1,5 +1,13 @@
 # nvim
 
+## Requerments
+    Mac:
+        1. `brew install ripgrep` 
+    Linux:
+        1. `sudo apt install ripgrep`
+
+
+
 ## nvim shortcuts
 
 1. `:wq` is boring `<leader><leader>`

@@ -50,10 +50,10 @@ vim.keymap.set({'n','v'}, '<C-f>', "\"fy/\\<C-R>f<CR>")
 vim.keymap.set('n','<C-f>', ":noh<CR>")
 
 -- vim.keymap.set('n','<C-f>', '/<C-r><C-w>\>/<C-r><C-w>')
-
-
-
-
+--
 --selected word stdout to bard-cli search
 vim.keymap.set('v','<leader>g', [["*y:%!bard-cli search <C-R>*<CR>]])
 
+-- selected word stdout to bard-cli search
+-- save file with prettier
+vim.keymap.set({'n','v'},'w', ":Prettier<CR>:w<CR>")
