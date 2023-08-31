@@ -9,7 +9,10 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 
 	}
-    use({ 'rose-pine/neovim', as = 'rose-pine' })
+
+    -- Using onedark theme
+    use 'navarasu/onedark.nvim'
+
 	use {
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate'
@@ -64,9 +67,24 @@ use {
     'nvim-tree/nvim-web-devicons', -- optional
   },
 }
+
 use('mhartington/formatter.nvim')
 use({ "wesleimp/stylua.nvim" })
 
 -- auto close tags
 use('m4xshen/autoclose.nvim')
+
+use {
+  'mawkler/modicator.nvim',
+  after = 'onedark.nvim', -- Add your colorscheme plugin here
+  setup = function()
+    -- These are required for Modicator to work
+    vim.o.cursorline = true
+    vim.o.number = true
+    vim.o.termguicolors = true
+  end,
+  config = function()
+    require('modicator').setup()
+  end
+}
 end)
