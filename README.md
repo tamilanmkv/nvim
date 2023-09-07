@@ -35,3 +35,12 @@
 4.  `<C-n` hide the filemager bar
 5.  `C-]` Change directory (when usefull with fuzzy finder)
 6.
+
+
+
+
+## Seach Filters:
+1. `/foo` search by typing current file
+2. `<C-f>` selected line seach current file 
+3. `/\%Vfoo` search inside the selected lines
+
