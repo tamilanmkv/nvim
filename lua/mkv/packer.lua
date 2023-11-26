@@ -74,6 +74,25 @@ use({ "wesleimp/stylua.nvim" })
 -- auto close tags
 use('m4xshen/autoclose.nvim')
 
+-- git git lens
+require('packer').startup(function(use)
+   -- other plugins ...
+   use 'APZelos/blamer.nvim'
+   -- other ...
+end)
+
+-- Remove the `use` here if you're using folke/lazy.nvim.
+use {
+  'Exafunction/codeium.vim',
+  config = function ()
+    -- Change '<C-g>' here to any keycode you like.
+    vim.keymap.set('i', '<C-g>', function () return vim.fn['codeium#Accept']() end, { expr = true })
+    vim.keymap.set('i', '<c-;>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true })
+    vim.keymap.set('i', '<c-,>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true })
+    vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear']() end, { expr = true })
+  end
+}
+
 use {
   'mawkler/modicator.nvim',
   after = 'onedark.nvim', -- Add your colorscheme plugin here

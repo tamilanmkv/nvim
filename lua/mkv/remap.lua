@@ -57,3 +57,17 @@ vim.keymap.set('v','<leader>g', [["*y:%!bard-cli search <C-R>*<CR>]])
 -- selected word stdout to bard-cli search
 -- save file with prettier
 vim.keymap.set({'n','v'},'w', ":Prettier<CR>:w<CR>")
+
+-- save file with black formatter
+vim.keymap.set({'n','v'},'<leader>w', ":black<CR>:w<CR>")
+
+--git lens 
+vim.g.blamer_enabled = true
+vim.g.blamer_delay = 100
+vim.g.blamer_prefix = '  '
+vim.g.blamer_date_format = '%Y-%m-%d %H:%M:%S'
+vim.g.blamer_template = '  <committer> ● <committer-time> , <summary>'
+vim.g.blamer_relative_time = true
+
+
+
