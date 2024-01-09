@@ -74,12 +74,7 @@ use({ "wesleimp/stylua.nvim" })
 -- auto close tags
 use('m4xshen/autoclose.nvim')
 
--- git git lens
-require('packer').startup(function(use)
-   -- other plugins ...
-   use 'APZelos/blamer.nvim'
-   -- other ...
-end)
+use('APZelos/blamer.nvim')
 
 -- Remove the `use` here if you're using folke/lazy.nvim.
 use {
