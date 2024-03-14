@@ -17,6 +17,7 @@ return require('packer').startup(function(use)
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate'
 	}	
+    use('nvim-tree/nvim-web-devicons')
 	use('nvim-treesitter/playground')
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
@@ -87,6 +88,20 @@ use {
     vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear']() end, { expr = true })
   end
 }
+
+-- use('shaunsingh/nord.nvim')
+
+use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+}
+
+-- use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+
+use "lukas-reineke/indent-blankline.nvim"
+
+use 'ggandor/lightspeed.nvim'
+--Lua:
 
 use {
   'mawkler/modicator.nvim',
