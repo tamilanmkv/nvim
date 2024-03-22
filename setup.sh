@@ -7,9 +7,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 # check system linux or mac if its is windows get the hell out
 if [ "$(uname)" == "Darwin" ]; then
-    brew install neovim ripgrep
+    brew install neovim ripgrep fzf
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-    sudo apt install neovim ripgrep -y
+    sudo apt install neovim ripgrep fzf -y
 
 fi
 
