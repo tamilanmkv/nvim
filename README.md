@@ -12,7 +12,7 @@
 
 1. `:wq` is boring `<leader><leader>`
 1. `:q` the hardest think in universe `<leader>q`
-1. `:qall` quit all windows at once
+1. `:qall` quit all windows at once `<leader>ta`
 
 ## additional shortcuts
 
@@ -34,13 +34,16 @@
 3.  `return` enter file
 4.  `<C-n` hide the filemager bar
 5.  `C-]` Change directory (when usefull with fuzzy finder)
-6.
-
-
 
 
 ## Seach Filters:
-1. `/foo` search by typing current file
-2. `<C-f>` selected line seach current file 
-3. `/\%Vfoo` search inside the selected lines
+1. `/foo` search by typing current file or `<C f>`
+2. `/\%Vfoo` search inside the selected lines or `<leader>vf`
+3. jump to next match `<C-n>`
+4. jump to previous match `<C-p>`
+5. jump based on word `<C-w>`
+6. lightspeed jump after cursor `s`
+7. lightspeed jump before cursor `S`
+
+
 
