@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="asset/image.jpeg" alt=" Nvim Logo" width="100" height="100" style="border-radius: 50%;" radius="50%">
+  <img src="asset/image.jpeg" alt=" Nvim Logo" width="100" height="100" style="border-radius: 50%;" border-radius="50%">
 </p>
 
 <h1 align="center"> NEO VIM</h1>
