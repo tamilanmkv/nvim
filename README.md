@@ -1,21 +1,30 @@
-
 <p align="center">
   <img src="asset/image.jpeg" alt=" Nvim Logo" width="100" height="100" style="border-radius: 50%;" border-radius="50%">
 </p>
 
 <h1 align="center"> NEO VIM</h1>
+<p align="center">
+  <a href="https://github.com/sponsors/tamilanmkv">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-red.svg" alt="Sponsor" />
+  </a>
+  <a href="https://www.buymeacoffee.com/tamilanmkv">
+    <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-%E2%98%95-yellow.svg" alt="Buy me a coffee" />
+  </a>
+</p>
 
 ## Installation and Setup
 
-To install and set up  Nvim, follow these steps:
+To install and set up Nvim, follow these steps:
 
 1. Clone the repository:
+
    ```sh
    git clone https://github.com/tamilanmkv/nvim.git
    cd nvim
    ```
 
 2. Ensure the setup script has execute permissions and run it:
+
    ```sh
    chmod +x setup.sh
    ./setup.sh
@@ -23,7 +32,7 @@ To install and set up  Nvim, follow these steps:
 
    Follow the prompts to complete the setup.
 
-3. If you are using Codium, run `:Codium Auth` to set up the plugin and start using  Nvim.
+3. If you are using Codium, run `:Codium Auth` to set up the plugin and start using Nvim.
 
    Reference: [ Nvim plugin for VS Codium](https://github.com/Exafunction/codeium.vim)
 
@@ -84,13 +93,3 @@ To install and set up  Nvim, follow these steps:
 5. Jump based on word `<C-w>`
 6. Lightspeed jump after cursor `s`
 7. Lightspeed jump before cursor `S`
-
-<p align="center">
-  <a href="https://github.com/sponsors/tamilanmkv">
-    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-red.svg" alt="Sponsor" />
-  </a>
-  <a href="https://www.buymeacoffee.com/tamilanmkv">
-    <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-%E2%98%95-yellow.svg" alt="Buy me a coffee" />
-  </a>
-</p>
-
