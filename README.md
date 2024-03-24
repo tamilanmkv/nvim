@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-red.svg" alt="Sponsor" />
   </a>
   <a href="https://www.buymeacoffee.com/tamilanmkv">
-    <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-%E2%98%95-yellow.svg" alt="Buy me a coffee" />
+    <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-%E2%98%95-yellow.svg" alt="Buy me a Coffee" />
   </a>
 </p>
 

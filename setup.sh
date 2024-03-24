@@ -2,7 +2,7 @@
 
 #packer install
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim 2&>/dev/null
 
 
 # check system linux or mac if its is windows get the hell out
@@ -15,7 +15,7 @@ fi
 
 # backup old config file
 mv ~/.config/nvim/ ~/.config/nvim_old 2&>/dev/null
-ln -s $(pwd) ~/.config/nvim
+ln -sf $(pwd) ~/.config/nvim
 
 
 # compile nvim lua plugin
