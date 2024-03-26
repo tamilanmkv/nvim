@@ -86,4 +86,5 @@ vim.g.blamer_template = '  <committer> ● <committer-time> , <summary>'
 vim.g.blamer_relative_time = true
 
 
-
+--remap toggle casesentence
+vim.keymap.set('n', 'U', 'viw~')
