@@ -24,7 +24,7 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
-vim.keymap.set("n", "<C-b>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+-- vim.keymap.set("n", "<C-b>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 
@@ -63,7 +63,7 @@ vim.keymap.set({'n','v'},'w', ":Prettier<CR>:w<CR>")
 vim.keymap.set({'n','v'},'<leader>fp', ":!black %<CR>")
 
 
---lsp start and start
+--lsp start and stop
 lsp_started = false
 function toggle_lsp_server()
     if lsp_started then
