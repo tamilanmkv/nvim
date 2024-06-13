@@ -6,8 +6,10 @@ return require('packer').startup(function(use)
 
 -- Mason package manger
 	use {
-		"williamboman/mason.nvim"
+		"williamboman/mason.nvim",
+        {'williamboman/mason-lspconfig.nvim'},
 	}
+
 
 -- github, undo history, sysntax
 	use('tpope/vim-fugitive')
@@ -75,7 +77,6 @@ use {
 -- lsp config
 use { "neovim/nvim-lspconfig" }
 use { "onsails/lspkind.nvim" }
-use { 'kabouzeid/nvim-lspinstall' }
 
 
 -- speed regex
