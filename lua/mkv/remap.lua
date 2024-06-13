@@ -88,3 +88,6 @@ vim.g.blamer_relative_time = true
 
 --remap toggle casesentence
 vim.keymap.set('n', 'U', 'viw~')
+
+-- vim.g.codeium_no_map_tab = true
+-- vim.g.codeium_enabled = true
