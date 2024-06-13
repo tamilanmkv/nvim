@@ -1,11 +1,4 @@
 
--- lsp.on_attach(function(client, bufnr)
--- 	lsp.default_keymaps({buffer = bufnr})
--- end)
-
--- (Optional) Configure lua language server for neovim
-
--- lsp.setup()
 local mark = require("harpoon.mark") 
 local ui =  require("harpoon.ui")
 

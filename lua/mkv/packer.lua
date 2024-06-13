@@ -2,19 +2,18 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
 
 -- Packer can manage itself
-	use 'wbthomason/packer.nvim'
+	use('wbthomason/packer.nvim')
 
 -- Mason package manger
 	use {
-		"williamboman/mason.nvim",
-		run = ":MasonUpdate", -- :MasonUpdate updates registry contents
-        opts = { ensure_installed = { "prettier" } },
+		"williamboman/mason.nvim"
 	}
 
 -- github, undo history, sysntax
 	use('tpope/vim-fugitive')
     use('mbbill/undotree')
     use('nvim-treesitter/playground')
+
 
 -- telscope scearch
 	use {
@@ -66,6 +65,17 @@ use {
         })
     end
 }
+-- use { "Exafunction/codeium.vim",
+--     requires = {
+--         "nvim-lua/plenary.nvim",
+--         "hrsh7th/nvim-cmp",
+--     },
+-- }
+
+-- lsp config
+use { "neovim/nvim-lspconfig" }
+use { "onsails/lspkind.nvim" }
+use { 'kabouzeid/nvim-lspinstall' }
 
 
 -- speed regex
@@ -77,7 +87,7 @@ use({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
 })
-use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+-- use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
 -- linue identify
 use {
