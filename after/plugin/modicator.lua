@@ -1,13 +1,13 @@
 
-require('modicator').setup({
-  highlights = {
-    -- Default options for bold/italic
-    defaults = {
-      bold = false,
-      italic = false
-    },
-  },
-})
+-- require('modicator').setup({
+--   highlights = {
+--     -- Default options for bold/italic
+--     defaults = {
+--       bold = false,
+--       italic = false
+--     },
+--   },
+-- })
 
 require('lualine').setup {
   options = {
@@ -15,6 +15,7 @@ require('lualine').setup {
     -- theme = 'modicator',
   }
 }
+
 require("ibl").setup()
 
 

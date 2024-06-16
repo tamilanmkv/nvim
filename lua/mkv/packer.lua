@@ -4,18 +4,41 @@ return require('packer').startup(function(use)
 -- Packer can manage itself
 	use('wbthomason/packer.nvim')
 
--- Mason package manger
-	use {
-		"williamboman/mason.nvim",
-        {'williamboman/mason-lspconfig.nvim'},
-	}
 
+-- lsp zerp
+use {
+  'VonHeikemen/lsp-zero.nvim',
+  branch = 'v3.x',
+  requires = {
+    --- Uncomment the two plugins below if you want to manage the language servers from neovim
+    -- {'williamboman/mason.nvim'},
+    -- {'williamboman/mason-lspconfig.nvim'},
+
+    {'neovim/nvim-lspconfig'},
+    {'hrsh7th/nvim-cmp'},
+    {'hrsh7th/cmp-nvim-lsp'},
+    {'L3MON4D3/LuaSnip'},
+  }
+}
+-- Mason package manger
+use {
+    "williamboman/nvim-lsp-installer",
+    "neovim/nvim-lspconfig",
+}
+    use {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
+        run = ":MasonUpdate"
+    }
+    use{ "VonHeikemen/lsp-zero.nvim"}
+    use{ "hrsh7th/nvim-cmp"}
 
 -- github, undo history, sysntax
 	use('tpope/vim-fugitive')
+    use 'APZelos/blamer.nvim'
     use('mbbill/undotree')
     use('nvim-treesitter/playground')
-
 
 -- telscope scearch
 	use {
@@ -38,9 +61,6 @@ return require('packer').startup(function(use)
 	}	
     use('nvim-tree/nvim-web-devicons')
 
-	-- use('MunifTanjim/prettier.nvim')
-    use('simrat39/rust-tools.nvim')
-
 -- fun
      use("eandrju/cellular-automaton.nvim")
 
@@ -56,28 +76,32 @@ use {
 }
 
 -- Codium 
-use {
-    "Exafunction/codeium.nvim",
-    requires = {
-        "nvim-lua/plenary.nvim",
-        "hrsh7th/nvim-cmp",
-    },
-    config = function()
-        require("codeium").setup({
-        })
-    end
-}
--- use { "Exafunction/codeium.vim",
+-- use {
+--     "Exafunction/codeium.nvim",
 --     requires = {
 --         "nvim-lua/plenary.nvim",
 --         "hrsh7th/nvim-cmp",
 --     },
+--     config = function()
+--         require("codeium").setup({
+--         })
+--     end
 -- }
 
--- lsp config
-use { "neovim/nvim-lspconfig" }
-use { "onsails/lspkind.nvim" }
+-- Codium
+use {
+  'Exafunction/codeium.vim',
+  branch = "1.8.5",
 
+  config = function ()
+    -- Change '<C-g>' here to any keycode you like.
+    -- vim.g.codeium_disable_bindings = 1
+    vim.keymap.set('i', '<C-g>', function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+    vim.keymap.set('i', '<c-;>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true })
+    vim.keymap.set('i', '<c-,>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true })
+    vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true })
+  end
+}
 
 -- speed regex
 use 'ggandor/lightspeed.nvim'
