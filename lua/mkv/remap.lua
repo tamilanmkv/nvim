@@ -57,7 +57,7 @@ vim.keymap.set('v','<leader>g', [["*y:%!bard-cli search <C-R>*<CR>]])
 
 -- selected word stdout to bard-cli search
 -- save file with prettier
-vim.keymap.set({'n','v'},'w', ":Prettier<CR>:w<CR>")
+vim.keymap.set({'n','v'},'ww', ":Prettier<CR>:w<CR>")
 
 -- save file with black formatter
 vim.keymap.set({'n','v'},'<leader>fp', ":!black %<CR>")
