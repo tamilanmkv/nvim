@@ -5,4 +5,7 @@ return {
       enabled = true,
     },
   },
+  keys = {
+    { "<C-f>", false },
+  },
 }

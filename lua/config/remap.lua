@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
--- vim.keymap.set("n", "<leader>pv",vim.cmd.Ex)
 
 -- python excute with <leader>r
 vim.keymap.set("n", "<leader>rp", ":w<CR>:!python3 %<CR>")

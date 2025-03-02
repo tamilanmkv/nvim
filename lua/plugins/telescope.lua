@@ -5,6 +5,7 @@ return {
   },
   opts = {},
   keys = {
+    { "<leader>/", false },
     {
       "<leader>ff",
       function()
