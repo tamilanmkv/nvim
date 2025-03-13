@@ -41,3 +41,6 @@ vim.o.termguicolors = true
 vim.o.cursorline = true
 vim.o.number = true
 vim.autoread = true
+
+--- avente status
+vim.opt.laststatus = 3

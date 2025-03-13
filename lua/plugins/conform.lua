@@ -3,8 +3,8 @@ return {
   opts = {
     formatters_by_ft = {
       python = { "black" },
-      javascript = { "prettierd" },
-      typescript = { "prettierd" },
+      javascript = { "prettier" },
+      typescript = { "prettier" },
       typescriptreact = { "prettier" },
     },
   },
