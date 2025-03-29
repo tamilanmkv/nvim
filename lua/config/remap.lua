@@ -10,3 +10,5 @@ vim.keymap.set("n", "<leader>rn", ":w<CR>:!node %<CR>")
 vim.keymap.set("n", "<leader>rr", ":w<CR>:!cargo run<CR>")
 
 -- greatest remap ever
+---- save file with black formatter
+vim.keymap.set({ "n", "v" }, "<leader>fp", ":!black %<CR>")
